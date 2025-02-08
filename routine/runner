@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -f "routine" ]; then
+    while :
+    do
+	echo "running"
+	sleep 900
+	sh -c "./routine"
+    done
+else
+    echo "no routine file to be ran"
+fi
